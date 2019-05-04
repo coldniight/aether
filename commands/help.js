@@ -5,21 +5,21 @@ module.exports.run = async (bot, message, args) => {
     let memberembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **report**`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let modembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **report**, **clear**, **kick**, **mute**, **unmute**`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let adminembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Avaible commands for user ${message.author}\n\n**help**, **ping**, **report**, **clear**, **kick**, **mute**, **unmute**, **ban**, **unban**, **giveaway**`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
