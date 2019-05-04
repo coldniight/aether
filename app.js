@@ -32,12 +32,6 @@ bot.on('message', async message => { // Message Functions
 
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if(commandfile) commandfile.run(bot,message,args);
-
-    if(message.channel.id === "574294001700831247") {
-        if(!(message.content == "$verify")) {
-            message.delete();
-        }
-    }
 });
 
 bot.on('ready', async () => { // Bot on login
@@ -60,15 +54,8 @@ bot.on('ready', async () => { // Bot on login
    });
 
 bot.on('guildMemberAdd', member => { // On member join
-    var role = member.guild.roles.find('name', 'Unverified');
+    var role = member.guild.roles.find('name', 'Verified');
     member.addRole(role);
-
-    let instrembed = new Discord.RichEmbed()
-    .setTitle("Aether Bot")
-    .setDescription(`Welcome to **Aether**, ${member}. To verify say \`$verify\` in the <#574294001700831247> channel.`)
-    .setColor(0xff2b2b)
-    .setFooter(member.id)
-    .setTimestamp();
     
     let welembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
@@ -76,12 +63,6 @@ bot.on('guildMemberAdd', member => { // On member join
     .setColor(0xff2b2b)
     .setFooter(member.id)
     .setTimestamp();
-
-
-    let instructionschannel = member.guild.channels.find(`id`, `574293982805229598`)
-    instructionschannel.send(instrembed);
-    
-    member.guild.channels.get("574310623110758402").send(welembed);
 });
 
 bot.on('guildMemberRemove', member => {
