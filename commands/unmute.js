@@ -5,14 +5,14 @@ module.exports.run = async (bot, message, args) => {
     let noperm = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to see that command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let helpembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Usage of command **unmute**\n\n**Usage:** $unmute <member>\n**Description:** Unmutes a member manually.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -30,14 +30,14 @@ module.exports.run = async (bot, message, args) => {
     let errorembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`The user ${tomute} isn't muted, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let validembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please specify a valid user to unmute, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -46,7 +46,7 @@ module.exports.run = async (bot, message, args) => {
     let permembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to run the \`unmute\` command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -59,14 +59,14 @@ module.exports.run = async (bot, message, args) => {
     let successembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Successfully unmuted user ${tomute}, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let muteembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You have been unmuted manually by ${message.author} in \`${message.guild}\`.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
