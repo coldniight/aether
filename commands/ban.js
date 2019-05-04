@@ -6,14 +6,14 @@ module.exports.run = async (bot, message, args) => {
     let noperm = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to see that command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let helpembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Usage of command **ban**\n\n**Usage:** $ban <member> <reason>\n**Description:** Bans a member from the server.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -26,14 +26,14 @@ module.exports.run = async (bot, message, args) => {
     let errorembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please specify a valid user to ban, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let permembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to run the \`ban\` command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -48,7 +48,7 @@ module.exports.run = async (bot, message, args) => {
     let allowembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You are not allowed to perform \`ban\` on user ${tokick}, ${message.author}`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -60,14 +60,14 @@ module.exports.run = async (bot, message, args) => {
     let successembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Successfully banned user ${tokick} for reason \`${reason}\`, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let muteembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You have been banned by ${message.author} for reason \`${reason}\` at \`${message.guild.name}\`.\n\n**Don't attempt to bypass a ban. We will just ban you again if caught.**`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -81,7 +81,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Banned in", `${message.channel} with ID \`${message.channel.id}\``)
     .addField("Moderator", `${message.author} with ID \`${message.author.id}\``)
     .addField("For Reason", `\`${reason}\``)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
