@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     let alreadyembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You're already verified, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
