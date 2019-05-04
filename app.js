@@ -72,7 +72,7 @@ bot.on('guildMemberAdd', member => { // On member join
     
     let welembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
-    .setDescription(`${member} just joined the server. Welcome to Aether :smiley:!`)
+    .setDescription(`${member} just joined the server. Welcome to Aether :smiley:`)
     .setColor(0xff2b2b)
     .setFooter(member.id)
     .setTimestamp();
