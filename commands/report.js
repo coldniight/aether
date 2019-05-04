@@ -4,14 +4,14 @@ module.exports.run = async (bot, message, args) => {
     let noperm = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to see that command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let helpembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Usage of command **report**\n\n**Usage:** $report <member> <reason>\n**Description:** Reports a member to the staff. **You will get warned if you send shitpost**.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -23,21 +23,21 @@ module.exports.run = async (bot, message, args) => {
     let successembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Successfully sent the report to the staff, ${message.author}. Thanks for reporting!`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let reasonembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please supply a reason of the report, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let errorembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please specify a valid user to report, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -52,7 +52,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Reported User", `${rUser} with ID \`${rUser.id}\``)
     .addField("Reported in", `${message.channel} with ID \`${message.channel.id}\``)
     .addField("With Reason", `\`${reason}\``)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
