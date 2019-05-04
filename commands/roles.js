@@ -4,35 +4,35 @@ module.exports.run = async (bot, message, args) => {
 
     await message.delete().catch(O_o=>{});
 
-    const a = message.guild.roles.get('573197802503405568');
+    const a = message.guild.roles.get('574306354181701632');
 
     const filter = (reaction, user) => ['🔞'].includes(reaction.emoji.name) && user.id === message.author.id;
     
     const roleembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Avaible Roles for user ${message.author}\n\n**🔞** ${a.toString()}`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     const addedembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You have been added the **${a.name}** role, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     const failedembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`I don't have permissions to add the **${a.name}** role, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     const alreadyembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You already have the **${a.name}** role, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -55,7 +55,7 @@ module.exports.run = async (bot, message, args) => {
                     let errembed = new Discord.RichEmbed()
                     .setTitle("Aether Bot")
                     .setDescription(`Failed to add the **${a.name}** role: ${err.message}.`)
-                    .setColor(0x00fffa)
+                    .setColor(0xff2b2b)
                     .setFooter(message.id)
                     .setTimestamp();
                 
