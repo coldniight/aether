@@ -6,42 +6,42 @@ module.exports.run = async (bot, message, args) => {
     let errorembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please specify a valid user to mute, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let timeembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please supply a time to mute, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let unmutedembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You have been unmuted automatically by the bot in \`${message.guild}\`.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let permembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to run the \`mute\` command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let noperm = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to see that command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let helpembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Usage of command **mute**\n\n**Usage:** $mute <member> <time> <reason>\n**Description:** Mutes a user for an amout of time.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -61,7 +61,7 @@ module.exports.run = async (bot, message, args) => {
     let allowembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You are not allowed to perform \`mute\` on user ${tomute}, ${message.author}`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -94,14 +94,14 @@ module.exports.run = async (bot, message, args) => {
     let successembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Successfully muted user ${tomute} for  \`${ms(mutetime)}\` with reason \`${reason}\`, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let muteembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You have been muted by ${message.author} for ${ms(mutetime)} with reason ${reason}.\n\n**Attemping to bypass a mute will get you muted for more time if you're caught.**`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -117,7 +117,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Moderator", `${message.author} with ID \`${message.author.id}\``)
     .addField("For", `${mutetime}`)
     .addField("With Reason", `\`${reason}\``)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
