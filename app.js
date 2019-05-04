@@ -66,14 +66,14 @@ bot.on('guildMemberAdd', member => { // On member join
     let instrembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Welcome to **Aether**, ${member}. To verify say \`$verify\` in the <#574294001700831247> channel.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(member.id)
     .setTimestamp();
     
     let welembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`${member} just joined the server. Welcome to Aether :smiley:!`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(member.id)
     .setTimestamp();
 
@@ -88,7 +88,7 @@ bot.on('guildMemberRemove', member => {
      let byeembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`${member} just left the server :pensive:`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(member.id)
     .setTimestamp();
     
