@@ -81,7 +81,7 @@ bot.on('guildMemberAdd', member => { // On member join
     let instructionschannel = member.guild.channels.find(`id`, `574293982805229598`)
     instructionschannel.send(instrembed);
     
-    member.guild.channels.get("574294495441584128").send(welembed);
+    member.guild.channels.get("574310623110758402").send(welembed);
 });
 
 bot.on('guildMemberRemove', member => {
@@ -92,7 +92,7 @@ bot.on('guildMemberRemove', member => {
     .setFooter(member.id)
     .setTimestamp();
     
-    member.guild.channels.get("574294495441584128").send(byeembed);
+    member.guild.channels.get("574310623110758402").send(byeembed);
 })
 
 bot.login(process.env.token);
