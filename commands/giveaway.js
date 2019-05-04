@@ -4,35 +4,35 @@ module.exports.run = async (bot, message, args) => {
     var errorembed2 = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please supply a valid number of time, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     var errorembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Please supply a valid number of winners, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let permembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to run the \`giveaway\` command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let noperm = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`You don't have enough permissions to see that command, ${message.author}.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
     let helpembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`Usage of command **giveaway**\n\n**Usage:** $giveaway <winners> <time> <item>\n**Description:** Creates a giveaway of a item for a specific amount of time.`)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
@@ -57,7 +57,7 @@ module.exports.run = async (bot, message, args) => {
     var giveawayembed = new Discord.RichEmbed()
     .setTitle("Aether Bot")
     .setDescription(`**New Giveaway: ${item}**\n\n Press **✅** to join\n**Time Left:** \`${time}\` minute(s)\n**Winners:** \`${winnerCount}\``)
-    .setColor(0x00fffa)
+    .setColor(0xff2b2b)
     .setFooter(message.id)
     .setTimestamp();
 
